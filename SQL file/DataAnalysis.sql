@@ -48,6 +48,13 @@ JOIN dept_emp dep ON dep.emp_no = employee.emp_no
 JOIN departments department ON department.dept_no = dep.dept_no
 WHERE department.dept_name = 'Sales'
 
-
+-- Question 7
+--List all employees in the Sales and Development departments, 
+--including their employee number, last name, first name, and department name.
+SELECT employee.emp_no, employee.last_name, employee.first_name, dept.dept_name
+FROM employees employee
+JOIN dept_emp AS de ON de.emp_no = employee.emp_no
+JOIN departments AS dept ON dept.dept_no = de.dept_no
+WHERE dept.dept_name IN ('Sales','Development')
 
 
