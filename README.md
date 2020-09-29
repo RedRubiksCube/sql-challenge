@@ -1,1 +1,1 @@
-# sql-challenge
+In this project, we pull in multiple CSV file into a PostgreSQL database and preform several queries on the tables. The objectives of the queries are listed above the code itself in the DataAnalysis.sql file. The table schema/ERD is listed in ERD.png.
