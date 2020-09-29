@@ -22,7 +22,15 @@ JOIN dept_manager AS dept_m ON dept_m.emp_no = employee.emp_no
 JOIN departments AS dept ON dept.dept_no = dept_m.depo_no
 order by employee.last_name
 
-
+-- Question 4
+-- List the department of each employee with the following information: 
+-- employee number, last name, first name, and department name.
+SELECT employee.emp_no, employee.last_name, employee.first_name, dept.dept_name
+FROM employees AS employee
+JOIN dept_emp de ON de.emp_no = employee.emp_no
+JOIN departments dept ON dept.dept_no = de.dept_no
+WHERE 1=1 
+order by 2,3
 
 
 -- Question 5
